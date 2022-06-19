@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 public class Ejercicio4 {
     public static void main(String[] args) {
-        ex();
-        //hasmap();
+        ejercicio1();
     }
 
-    static void ex() {
+    static void ejercicio1() {
 
         var scanner = new Scanner(System.in); //inicializamos el scanner
 
