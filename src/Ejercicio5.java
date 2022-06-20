@@ -2,29 +2,28 @@ import java.util.Scanner;
 
 public class Ejercicio5 {
 
-    static Scanner scanner;
+    static Scanner scanner=new Scanner(System.in);
 
     public static void main(String[] args) {
-        var numero=ingresarNumero();
+        var numero = ingresarNumero();
         menu(numero);
+        scanner.close();
     }
 
-    static int ingresarNumero(){
+    static int ingresarNumero() {
         int numero;
         do {
-            scanner = new Scanner(System.in);
             System.out.print("Ingresar un numero entre 0 y 100: ");
             numero = scanner.nextInt();
-        } while (numero<=0  || numero>100);
+        } while (numero <= 0 || numero > 100);
 
         return numero;
     }
 
-    static void menu(int numero){
-        var scanner = new Scanner(System.in);
+    static void menu(int numero) {
+        scanner = new Scanner(System.in);
         System.out.print("Ingresar letras del A a E: ");
         var menu = scanner.nextLine();
-        scanner.close();
 
         switch (menu) {
             case "A":
@@ -51,36 +50,35 @@ public class Ejercicio5 {
         }
     }
 
-    static void numerosPares(int numero){
-        for (var i=0;i<=numero;i++) {
-            if (i%2==0)
+    static void numerosPares(int numero) {
+        for (var i = 0; i <= numero; i++) {
+            if (i % 2 == 0)
                 System.out.println(i);
         }
     }
 
-    static void numerosImpares(int numero){
-        for (var i=0;i<=numero;i++) {
-            if (i%2!=0)
+    static void numerosImpares(int numero) {
+        for (var i = 0; i <= numero; i++) {
+            if (i % 2 != 0)
                 System.out.println(i);
         }
     }
 
-    static void numerosMultiplos3(int numero){
-        for (var i=0;i<=numero;i++) {
-            if (i%3==0)
+    static void numerosMultiplos3(int numero) {
+        for (var i = 0; i <= numero; i++) {
+            if (i % 3 == 0)
                 System.out.println(i);
         }
     }
 
-    static void numerosMultiplos5(int numero){
-        for (var i=0;i<=numero;i++) {
-            if (i%5==0)
+    static void numerosMultiplos5(int numero) {
+        for (var i = 0; i <= numero; i++) {
+            if (i % 5 == 0)
                 System.out.println(i);
         }
     }
 
-    static void terminarJuego(){
+    static void terminarJuego() {
         System.out.println("Bye, gracias jugar");
     }
-
 }

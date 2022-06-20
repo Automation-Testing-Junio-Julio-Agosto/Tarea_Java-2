@@ -16,18 +16,18 @@ public class Ejercicio1 {
 
         scanner.close(); //cerrando el scanner
 
-        var sumarIntegers=sumarIntegersString(numero1,numero2);
+        var sumarIntegers = sumarIntegersString(numero1, numero2);
         System.out.println("La suma de enteros es: " + sumarIntegers);
 
-        var sumarDoubles=sumarDoublesString(numero3,numero4);
+        var sumarDoubles = sumarDoublesString(numero3, numero4);
         System.out.println("La suma de decimales es: " + sumarDoubles);
     }
 
-    public static int sumarIntegersString(String numero1,String numero2){
-       return Integer.parseInt(numero1) + Integer.parseInt(numero2);
+    public static int sumarIntegersString(String numero1, String numero2) {
+        return Integer.parseInt(numero1) + Integer.parseInt(numero2);
     }
 
-    public static double sumarDoublesString(String numero3,String numero4){
+    public static double sumarDoublesString(String numero3, String numero4) {
         return Double.parseDouble(numero3) + Double.parseDouble(numero4);
     }
 }

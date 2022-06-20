@@ -8,21 +8,26 @@ public class Ejercicio4 {
     }
 
     static void ejercicio1() {
-
         var scanner = new Scanner(System.in); //inicializamos el scanner
 
         System.out.print("Ingresar nombre 1: ");
         var nombre1 = scanner.nextLine();
+
         System.out.print("Ingresar nombre 2: ");
         var nombre2 = scanner.nextLine();
+
         System.out.print("Ingresar nombre 3: ");
         var nombre3 = scanner.nextLine();
+
         System.out.print("Ingresar nombre 4: ");
         var nombre4 = scanner.nextLine();
+
         System.out.print("Ingresar nombre 5: ");
         var nombre5 = scanner.nextLine();
+
         System.out.print("Ingresar nombre 6: ");
         var nombre6 = scanner.nextLine();
+
         System.out.print("Ingresar nombre 7: ");
         var nombre7 = scanner.nextLine();
 
