@@ -21,7 +21,7 @@ public class Ejercicio5 {
     }
 
     static void menu(int numero) {
-        scanner = new Scanner(System.in);
+        scanner.nextLine();
         System.out.print("Ingresar letras del A a E: ");
         var menu = scanner.nextLine();
 
